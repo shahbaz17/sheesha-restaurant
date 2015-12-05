@@ -38,6 +38,37 @@
 
     </style>
 
+    <style type="text/css">
+    .padding-auto{
+        padding: 10px !important;
+    }
+    .overflow-hidden{
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+    }
+    .bgcolor{
+        background-color: #212121 !important;
+        opacity: 0.9 !important;
+        position: absolute !important;
+        z-index: 10 !important;
+    }
+    .text-white{
+        color: #fff !important;
+    }
+    .padding-menu{
+        padding-left: 30px !important;
+        padding-top: 20px !important;
+    }
+    .float-right{
+        float: right !important;
+        font-size: 25px !important;
+    }
+    .height{
+        height: 500px !important;
+        width: 100% !important;
+    }
+    </style>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -72,10 +103,10 @@
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">Our Dishes</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -139,14 +170,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
+                    <h2 class="section-heading">Taste The Flame</h2>
                     <hr class="light">
-                    <p class="text-faded">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="text-faded">History remember the Nawabs of avadh for their love of music, dance of epicurean delights and of grand gestures. When famine ravaged the state, Nawab Asaf-ud-Daulah decrced the never ending construction of a giant edifice, the Imam Bara, creating unceasing employment. By royal decree too, arrangements were made to provide food, enormous containers were filled with rice, meat, vegetables, spices . Hot charcoal was placed on the top & fires fit underneath while slow cooking ensured that food was available day or night. The result was extraordinary, for when the vessels were unsealed the spending aromas attracted royal attention. By order of the nawab the dummed cuisine was now perfected, for the royal table, exotic dishes were evolved in which flavours and fragrances intermingled, with exquisite results, before long, the new cuisine was fashionable at may other royal courts. Sheesha invites you to enjoy this elegant cuisine. A most wondrous experience with the taste of flame.</p>
                     <a href="#" class="btn btn-default btn-xl">Order</a>
                 </div>
             </div>
@@ -167,33 +193,29 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Example</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h3>Banquit</h3>
+                        <p class="text-muted">Lets have a blast celebrate your joy with us. Get atteractive deals for all party events</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Example</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h3>Catering</h3>
+                        <p class="text-muted">"Your place our food"<br> We also provide catering services at affordable costs at various venues. </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Example</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h3>Your Kitchen</h3>
+                        <p class="text-muted">Want food cooked at your home?. Our chef would visit your place and cook the food you like the way you like</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Example</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h3>Drink 'N' Dine</h3>
+                        <p class="text-muted">Amazing ambiance for you to have an outing along with amazing feast for your tastebuds.</p>
                     </div>
                 </div>
             </div>
@@ -203,8 +225,9 @@
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                
+                <div id="show" class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
                         <img src="images/portfolio/1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -218,8 +241,33 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div id="more" class="bgcolor hidden-default height">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 padding-auto overflow-hidden">
+                                <img style="height: 480px; width: 100%;" src="images/portfolio/1.jpg">
+                            </div>
+                        <div class="col-md-3 padding-menu text-white">
+                            <span id="close" class="glyphicon glyphicon-remove float-right" aria-hidden="true"></span>
+                            <h2>Heading</h2>
+                            <br>
+                            <h4>MENU</h4>
+                            <ul>
+                                <li>Menu list 1</li>
+                                <li>Menu list 2</li>
+                                <li>Menu list 3</li>
+                                <li>Menu list 4</li>
+                            </ul>
+                            <br>
+                            <button class="btn btn-primary">Order</button>  
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="show1" class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
                         <img src="images/portfolio/2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -233,8 +281,33 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div id="more1" class="bgcolor hidden-default height">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 padding-auto overflow-hidden">
+                                <img style="height: 480px; width: 100%;" src="images/portfolio/2.jpg">
+                            </div>
+                        <div class="col-md-3 padding-menu text-white">
+                            <span id="close1" class="glyphicon glyphicon-remove float-right" aria-hidden="true"></span>
+                            <h2>Heading</h2>
+                            <br>
+                            <h4>MENU</h4>
+                            <ul>
+                                <li>Menu list 1</li>
+                                <li>Menu list 2</li>
+                                <li>Menu list 3</li>
+                                <li>Menu list 4</li>
+                            </ul>
+                            <br>
+                            <button class="btn btn-primary">Order</button>  
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="show2" class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
                         <img src="images/portfolio/3.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -248,8 +321,33 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div id="more2" class="bgcolor hidden-default height">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 padding-auto overflow-hidden">
+                                <img style="height: 480px; width: 100%;" src="images/portfolio/3.jpg">
+                            </div>
+                        <div class="col-md-3 padding-menu text-white">
+                            <span id="close2" class="glyphicon glyphicon-remove float-right" aria-hidden="true"></span>
+                            <h2>Heading</h2>
+                            <br>
+                            <h4>MENU</h4>
+                            <ul>
+                                <li>Menu list 1</li>
+                                <li>Menu list 2</li>
+                                <li>Menu list 3</li>
+                                <li>Menu list 4</li>
+                            </ul>
+                            <br>
+                            <button class="btn btn-primary">Order</button>  
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="show3" class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
                         <img src="images/portfolio/4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -263,8 +361,33 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div id="more3" class="bgcolor hidden-default height">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 padding-auto overflow-hidden">
+                                <img style="height: 480px; width: 100%;" src="images/portfolio/4.jpg">
+                            </div>
+                        <div class="col-md-3 padding-menu text-white">
+                            <span id="close3" class="glyphicon glyphicon-remove float-right" aria-hidden="true"></span>
+                            <h2>Heading</h2>
+                            <br>
+                            <h4>MENU</h4>
+                            <ul>
+                                <li>Menu list 1</li>
+                                <li>Menu list 2</li>
+                                <li>Menu list 3</li>
+                                <li>Menu list 4</li>
+                            </ul>
+                            <br>
+                            <button class="btn btn-primary">Order</button>  
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="show4" class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
                         <img src="images/portfolio/5.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -278,8 +401,33 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div id="more4" class="bgcolor hidden-default height">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 padding-auto overflow-hidden">
+                                <img style="height: 480px; width: 100%;" src="images/portfolio/5.jpg">
+                            </div>
+                        <div class="col-md-3 padding-menu text-white">
+                            <span id="close4" class="glyphicon glyphicon-remove float-right" aria-hidden="true"></span>
+                            <h2>Heading</h2>
+                            <br>
+                            <h4>MENU</h4>
+                            <ul>
+                                <li>Menu list 1</li>
+                                <li>Menu list 2</li>
+                                <li>Menu list 3</li>
+                                <li>Menu list 4</li>
+                            </ul>
+                            <br>
+                            <button class="btn btn-primary">Order</button>  
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="show5" class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
                         <img src="images/portfolio/6.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -293,8 +441,33 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div id="more5" class="bgcolor hidden-default height">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 padding-auto overflow-hidden">
+                                <img style="height: 480px; width: 100%;" src="images/portfolio/4.jpg">
+                            </div>
+                        <div class="col-md-3 padding-menu text-white">
+                            <span id="close5" class="glyphicon glyphicon-remove float-right" aria-hidden="true"></span>
+                            <h2>Heading</h2>
+                            <br>
+                            <h4>MENU</h4>
+                            <ul>
+                                <li>Menu list 1</li>
+                                <li>Menu list 2</li>
+                                <li>Menu list 3</li>
+                                <li>Menu list 4</li>
+                            </ul>
+                            <br>
+                            <button class="btn btn-primary">Order</button>  
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="show6" class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
                         <img src="images/portfolio/7.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -308,8 +481,33 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div id="more6" class="bgcolor hidden-default height">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 padding-auto overflow-hidden">
+                                <img style="height: 480px; width: 100%;" src="images/portfolio/4.jpg">
+                            </div>
+                        <div class="col-md-3 padding-menu text-white">
+                            <span id="close6" class="glyphicon glyphicon-remove float-right" aria-hidden="true"></span>
+                            <h2>Heading</h2>
+                            <br>
+                            <h4>MENU</h4>
+                            <ul>
+                                <li>Menu list 1</li>
+                                <li>Menu list 2</li>
+                                <li>Menu list 3</li>
+                                <li>Menu list 4</li>
+                            </ul>
+                            <br>
+                            <button class="btn btn-primary">Order</button>  
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="show7" class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
                         <img src="images/portfolio/8.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -323,8 +521,33 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div id="more7" class="bgcolor hidden-default height">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 padding-auto overflow-hidden">
+                                <img style="height: 480px; width: 100%;" src="images/portfolio/4.jpg">
+                            </div>
+                        <div class="col-md-3 padding-menu text-white">
+                            <span id="close7" class="glyphicon glyphicon-remove float-right" aria-hidden="true"></span>
+                            <h2>Heading</h2>
+                            <br>
+                            <h4>MENU</h4>
+                            <ul>
+                                <li>Menu list 1</li>
+                                <li>Menu list 2</li>
+                                <li>Menu list 3</li>
+                                <li>Menu list 4</li>
+                            </ul>
+                            <br>
+                            <button class="btn btn-primary">Order</button>  
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="show8" class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
                         <img src="images/portfolio/9.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -338,6 +561,31 @@
                         </div>
                     </a>
                 </div>
+                <div id="more8" class="bgcolor hidden-default height">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 padding-auto overflow-hidden">
+                                <img style="height: 480px; width: 100%;" src="images/portfolio/9.jpg">
+                            </div>
+                        <div class="col-md-3 padding-menu text-white">
+                            <span id="close8" class="glyphicon glyphicon-remove float-right" aria-hidden="true"></span>
+                            <h2>Heading</h2>
+                            <br>
+                            <h4>MENU</h4>
+                            <ul>
+                                <li>Menu list 1</li>
+                                <li>Menu list 2</li>
+                                <li>Menu list 3</li>
+                                <li>Menu list 4</li>
+                            </ul>
+                            <br>
+                            <button class="btn btn-primary">Order</button>  
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -346,7 +594,7 @@
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>Free Home Delivery</h2>
-                <a href="#" class="btn btn-default btn-xl wow tada">1800 200 1400</a>
+                <a href="#" class="btn btn-default btn-xl wow tada">957-136-5457</a>
             </div>
         </div>
     </aside>
@@ -359,14 +607,11 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
+                    <p>We would be glad to here from you. Feel free to contact us for any querries or suggestions.</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
+                    <p>957-136-5457</p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
@@ -407,6 +652,99 @@
         interval: 3000 //changes the speed
     })
     </script>
+
+    <script type="text/javascript">
+            $(function(){
+                $("#more").hide();
+                $("#show").on("click", function(){
+                    $("#more").show();
+                });
+                $("#close").on("click", function(){
+                    $("#more").hide();
+                });
+            });
+
+            $(function(){
+                $("#more1").hide();
+                $("#show1").on("click", function(){
+                    $("#more1").show();
+                });
+                $("#close1").on("click", function(){
+                    $("#more1").hide();
+                });
+            });
+
+            $(function(){
+                $("#more2").hide();
+                $("#show2").on("click", function(){
+                    $("#more2").show();
+                });
+                $("#close2").on("click", function(){
+                    $("#more2").hide();
+                });
+            });
+
+            $(function(){
+                $("#more3").hide();
+                $("#show3").on("click", function(){
+                    $("#more3").show();
+                });
+                $("#close3").on("click", function(){
+                    $("#more3").hide();
+                });
+            });
+
+            $(function(){
+                $("#more4").hide();
+                $("#show4").on("click", function(){
+                    $("#more4").show();
+                });
+                $("#close4").on("click", function(){
+                    $("#more4").hide();
+                });
+            });
+
+            $(function(){
+                $("#more5").hide();
+                $("#show5").on("click", function(){
+                    $("#more5").show();
+                });
+                $("#close5").on("click", function(){
+                    $("#more5").hide();
+                });
+            });
+
+            $(function(){
+                $("#more6").hide();
+                $("#show6").on("click", function(){
+                    $("#more6").show();
+                });
+                $("#close6").on("click", function(){
+                    $("#more6").hide();
+                });
+            });
+
+            $(function(){
+                $("#more7").hide();
+                $("#show7").on("click", function(){
+                    $("#more7").show();
+                });
+                $("#close7").on("click", function(){
+                    $("#more7").hide();
+                });
+            });
+
+            $(function(){
+                $("#more8").hide();
+                $("#show8").on("click", function(){
+                    $("#more8").show();
+                });
+                $("#close8").on("click", function(){
+                    $("#more8").hide();
+                });
+            });
+
+        </script>
 
 </body>
 
