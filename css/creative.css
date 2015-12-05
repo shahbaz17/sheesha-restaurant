@@ -15,8 +15,8 @@ body {
 }
 
 hr {
-    max-width: 50px;
-    border-color: #f05f40;
+    max-width: 100px;
+    border-color: #f00;
     border-width: 3px;
 }
 
@@ -25,7 +25,7 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
+    color: #f00;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -52,7 +52,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #f05f40;
+    background-color: #f00;
 }
 
 .bg-dark {
@@ -112,7 +112,7 @@ aside {
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #f05f40!important;
+    color: #f00 !important;
     background-color: transparent;
 }
 
@@ -123,8 +123,8 @@ aside {
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: rgba(255,255,255,.3);
-        background-color: transparent;
+        border-color: rgba(0,0,0,0.9);
+        background-color: rgba(2,0,15,.5);
     }
 
     .navbar-default .navbar-header .navbar-brand {
@@ -168,7 +168,7 @@ aside {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #f05f40;
+        color: #f00;
     }
 }
 
@@ -274,7 +274,7 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(240,95,64,.9);
+    background: rgba(207,0,15,.6);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -323,7 +323,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-    color: #f05f40;
+    color: #f00;
 }
 
 .no-gutter > [class*=col-] {
