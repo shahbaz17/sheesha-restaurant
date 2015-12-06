@@ -39,6 +39,15 @@
     </style>
 
     <style type="text/css">
+    .carousel-indicators li{
+    	background-color: transparent !important;
+    	border-color: transparent !important;
+    }
+    .carousel-indicators .active{
+    	background-color: transparent !important;
+    	border-color: transparent !important;
+    }
+
     .padding-auto{
         padding: 10px !important;
     }
@@ -51,6 +60,29 @@
         opacity: 0.9 !important;
         position: absolute !important;
         z-index: 10 !important;
+        -webkit-transition: all .75s;
+    	-moz-transition: all .75s;
+    	transition: all .75s;
+    }
+    .transparent-color{
+    	background-color: rgba(2,0,15,0.7);
+    }
+    .ordercolor{
+    	background-color: rgb(87, 183, 57) !important;
+    }
+    .ordercolor:hover{
+    	background-color: rgb(87, 183, 57) !important;
+    	color: #fff;
+    }
+    .right-mid{
+    	left: 60% !important;
+    	right: 5% !important;
+    	bottom: 30% !important; 
+    }
+    .left-mid{
+    	left: 5% !important;
+    	right: 60% !important;
+    	bottom: 30% !important; 
     }
     .text-white{
         color: #fff !important;
@@ -108,6 +140,9 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact Us</a>
                     </li>
+                    <li>
+                        <a class="btn btn-default btn-l wow tada ordercolor" style="visibility:visible; animation-name: tada;" href="#order">Order</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -130,36 +165,56 @@
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('images/Picture (1).jpg');"></div>
-                <div class="carousel-caption">
-                    <h2></h2>
+                <div class="carousel-caption transparent-color right-mid">
+                    <h2>Content overlaying</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('images/Picture (3).jpg');"></div>
-                <div class="carousel-caption">
-                    <h2></h2>
+                <div class="carousel-caption transparent-color">
+                    <h2>Content overlaying</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('images/Picture (2).jpg');"></div>
-                <div class="carousel-caption">
-                    <h2></h2>
+                <div class="carousel-caption transparent-color left-mid">
+                    <h2>Content overlaying</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('images/Picture (4).jpg');"></div>
-                <div class="carousel-caption">
-                    <h2></h2>
+                <div class="carousel-caption transparent-color">
+                    <h2>Content overlaying</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('images/Picture (5).jpg');"></div>
-                <div class="carousel-caption">
-                    <h2></h2>
+                <div class="carousel-caption transparent-color">
+                    <h2>Content overlaying</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
                 </div>
             </div>
         </div>
@@ -241,7 +296,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="more" class="bgcolor hidden-default height">
+                <div id="more" class="bgcolor hidden-default height ">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-9 padding-auto overflow-hidden">
